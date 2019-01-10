@@ -18,10 +18,7 @@ public class TopViewOfBinaryTree {
         if(node == null){
             return;
         }
-        Integer i =  map.get(n);
-        if(i == null) {
-            map.put(n, node.value);
-        }
+        map.put(n, node.value);
         topView(node.left,n-1);
         topView(node.right,n+1);
 

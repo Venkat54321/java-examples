@@ -28,6 +28,7 @@ public class CustomBinaryTree {
         Entry e18 = new Entry(18);
         Entry e19 = new Entry(19);
         Entry e20 = new Entry(20);
+        Entry e21 = new Entry(21);
 
 
 
@@ -45,6 +46,8 @@ public class CustomBinaryTree {
 
         e5.left = e10;
         e5.right = e11;
+
+        e11.right = e21;
 
         e11.left = e16;
         e16.left = e17;
@@ -106,7 +109,7 @@ public class CustomBinaryTree {
         CustomBinaryTree  customBinaryTree = new CustomBinaryTree();
         customBinaryTree.create();
         //
-        BottomViewOfBinaryTree.bottomViewObBinaryTree(customBinaryTree.root);
+        LevelOrderTraversalUsingIterative.levelOrderTraRecursive(customBinaryTree.root,0);
     }
 
 

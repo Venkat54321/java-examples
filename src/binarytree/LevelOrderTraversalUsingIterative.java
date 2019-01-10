@@ -12,10 +12,11 @@ public class LevelOrderTraversalUsingIterative {
         }
         if(n == 1){
             System.out.println(node.value);
-            return;
         }
-        levelOrderTraRecursive(node.left,n-1);
-        levelOrderTraRecursive(node.right,n-1);
+        else if (n > 1) {
+            levelOrderTraRecursive(node.left, n - 1);
+            levelOrderTraRecursive(node.right, n - 1);
+        }
     }
 
 

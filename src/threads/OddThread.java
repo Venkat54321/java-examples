@@ -17,7 +17,7 @@ public class OddThread implements Runnable {
             synchronized (lock) {
 
                 while (true) {
-                    if (n.get() % 2 != 0) {
+                    if (n.get() % 2 == 0) {
 
                         try {
                             lock.wait();

@@ -38,10 +38,5 @@ public class TestImmutable {
         System.out.println(test.id);
         System.out.println(test.name);
         System.out.println(test.list);
-
-
-
-
-
     }
 }
