@@ -9,6 +9,9 @@ abstract class Test{
         System.out.println("Display message" + s);
 
     }
+    public static void m1(){
+
+    }
 
     public abstract void display1();
 }
@@ -20,6 +23,7 @@ public class AbstactionTest extends Test{
 
         Test obj = new AbstactionTest();
         obj.display(4);
+        AbstactionTest.m1();
 
     }
 

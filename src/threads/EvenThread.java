@@ -13,7 +13,7 @@ public class EvenThread implements Runnable {
     }
 
     @Override
-    public void run() {
+    public synchronized void run() {
             synchronized (lock) {
 
                 while (true){

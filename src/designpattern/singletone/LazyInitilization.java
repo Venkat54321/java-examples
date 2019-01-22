@@ -1,4 +1,4 @@
-package designpattern;
+package designpattern.singletone;
 
 public class LazyInitilization {
 

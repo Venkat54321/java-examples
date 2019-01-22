@@ -1,6 +1,7 @@
 package linkedlist;
 
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -8,8 +9,8 @@ import java.util.Set;
 public class LinkedList {
 
     private static Node head;
+    static  List<Node> nodeAddressList = new ArrayList<>();
 
-    List<Integer> list = new java.util.LinkedList<>();
 
     public void add(int value){
 
@@ -75,6 +76,14 @@ public class LinkedList {
 
     }
 
+    public void getNodeAdderList(){
+        Node tmp = head;
+        while (tmp != null){
+           nodeAddressList.add(tmp.next);
+           tmp = tmp.next;
+        }
+    }
+
     public static void main(String[] args) {
         LinkedList linkedList1 = new LinkedList();
         LinkedList linkedList2 = new LinkedList();
@@ -87,7 +96,9 @@ public class LinkedList {
         linkedList1.add(15);
         linkedList1.add(7);
 
-        ReverseLinkedListWithGroupOfK.reverseWithGroup(head,3);
+       // ReverseLinkedListWithGroupOfK.reverseWithGroup(head,3);
+        linkedList1.getNodeAdderList();
+        System.out.println(nodeAddressList);
 
 
 
