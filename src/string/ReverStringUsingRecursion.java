@@ -4,6 +4,8 @@ public class ReverStringUsingRecursion {
 
     public static void main(String[] args) {
         String s = "abcdef";
+        String s2 = "a";
+        System.out.println(s2.substring(1));
         String s1  = reverse(s);
         System.out.println(s1);
     }
