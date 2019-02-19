@@ -17,13 +17,14 @@ abstract class Test{
 }
 
 
-public class AbstactionTest extends Test{
+public class AbstractionTest extends Test{
 
     public static void main(String[] args) {
 
-        Test obj = new AbstactionTest();
+        Test obj = new AbstractionTest();
         obj.display(4);
-        AbstactionTest.m1();
+        obj.display1();
+        AbstractionTest.m1();
 
     }
 

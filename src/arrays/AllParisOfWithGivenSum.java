@@ -6,6 +6,8 @@ public class AllParisOfWithGivenSum {
 
     public static void main(String[] args) {
         int[] array = {5,8,3,4,2,6,10,7,1,9};
+        Arrays.sort(array);
+        System.out.println();
         int sum = 11;
         Arrays.sort(array);
         printPairs(array,sum);
