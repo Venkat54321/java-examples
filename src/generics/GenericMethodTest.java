@@ -11,6 +11,14 @@ public class GenericMethodTest {
         System.out.println(stringList);
         List<Integer> intergerList = geneticMethod(1,2);
         System.out.println(intergerList);
+
+        Employee e1 = new Employee(1,"venkat");
+        Employee e2 = new Employee(1,"venkat12");
+
+        Student s1 = new Student(1,"Venkat");
+
+        List<?> list = geneticMethod(e1,s1);
+        System.out.println(list);
     }
 
     public static <T> List<T> geneticMethod(T t1,T t2){
